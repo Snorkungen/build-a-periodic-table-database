@@ -18,3 +18,6 @@ if [[ -z $ELEMENT ]];then
   exit 0
 fi
 
+echo $ELEMENT | while IFS=\| read A_NUMBER A_MASS SYMBOL NAME TYPE M_POINT B_POINT ; do
+  echo "The element with atomic number $A_NUMBER is $NAME ($SYMBOL). It's a $TYPE, with a mass of $A_MASS amu. $NAME has a melting point of $M_POINT celsius and a boiling point of $B_POINT celsius."
+done
