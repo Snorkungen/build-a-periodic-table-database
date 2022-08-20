@@ -1,4 +1,5 @@
 #!/bin/bash
+# Snorkungen 20 Aug 2022
 
 PSQL="psql --username=freecodecamp --dbname=periodic_table --no-align --tuples-only -c"
 
